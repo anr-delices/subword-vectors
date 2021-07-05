@@ -38,5 +38,14 @@ spm_encode --model=data/arxiv-metadata-oai-snapshot \
            > data/arxiv-metadata-oai-snapshot.piece
 
 # Train the subword GloVe vectors
-
+# script adapted from https://github.com/stanfordnlp/GloVe/blob/master/demo.sh
+./src/train-glove.sh
 ```
+
+## Download pre-trained models
+
+Pre-trained models are available in the `data/` directory.
+
+- `data/arxiv-metadata-oai-snapshot.model` is the sentencePiece model.
+- `data/arxiv-metadata-oai-snapshot.vocab` is the sentencePiece vocabulary file.
+- `data/vectors.txt` and `data/vectors.bin` are learned GloVe vectors (50 dim). 
